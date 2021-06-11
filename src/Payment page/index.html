@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Payment page </title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3> Payment Method </h3>
+        </header>
+
+        <div class="payment-method">
+            <form action="" class="form">
+                <label for="card-method" class="card-item">
+                    <input type="radio" name="payment-method" id="card-method" class="card-method">
+                    <div class="content-card">
+                        <div class="content-image">
+                            <div class="image">
+                                <img src="./Images/MasterCard.svg" alt="">
+                            </div>
+                            <div class="image">
+                                <img src="./Images/Visa.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-text">
+                            <h4> Choose this if you want to pay with credit/debit card </h4>
+                        </div>
+                    </div>
+                </label>
+                <label for="wallet-method" class="wallet-item">
+                    <input type="radio" name="payment-method" id="wallet-method" class="wallet-method">
+                    <div class="content-card">
+                        <div class="content-image">
+                            <div class="image">
+                                <img src="./Images/Mobile Payment.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-text">
+                            <h4> Choose this if you want to pay with e wallet </h4>
+                        </div>
+                    </div>
+                </label>
+            </form>
+        </div>
+
+        <div class="payment-form">
+            <form action="" class="pay">
+                <h4 class="title"> Loan term </h4>
+                <input type="date" id="date" class="form-control">
+            </form>
+            <form action="" class="pay">
+                <h4 class="title"> Adress </h4>
+                <input type="text" id="Adress" class="form-control">
+            </form>
+            <form action="" class="pay">
+                <h4 class="title"> Email confirmation </h4>
+                <input type="email" id="email-confirmation" class="form-control">
+            </form>
+        </div>
+
+        <footer>
+            <form action="">
+                <input type="button" value="Payment-confirm" class="btn">
+            </form>
+        </footer>
+    </div>
+</body>
+</html>
